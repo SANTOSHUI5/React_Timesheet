@@ -21,8 +21,8 @@
   float: right;
 }
 
-.filterPanel {
-  background-color: #f3f3f3;
+.filter-panel {
+  border-bottom: 1px solid #d4d4d4;
   padding: 0;
   max-height: 0;
   -webkit-transition: max-height 0.3s ease-out, padding 0.3s;
@@ -30,8 +30,32 @@
   overflow: hidden;
 }
 
-.showFilters {
+.show-filters {
   max-height: 500px;
-  padding: 1em;
+  -webkit-transition: max-height 0.75s ease, padding 0.3s;
   transition: max-height 0.75s ease, padding 0.3s;
+}
+
+.filter-header {
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.filter-header h3 {
+  margin: 0.5em;
+  text-align: left;
+  font-weight: normal;
+}
+
+.filter-content {
+  padding: 1em;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+.no-padding {
+  padding: 0;
 }
