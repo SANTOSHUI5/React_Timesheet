@@ -1,0 +1,87 @@
+.nav {
+  padding: 10px 5px 0;
+  background: #333;
+}
+.addBt {
+  float: right;
+  padding-right: 1.5em ;
+  color: white;
+  position: absolute;
+  right: 0;
+
+}
+.tabStyle{
+    align-items: center;
+    padding: 1em 1em;
+}
+.content-style{
+    display: flex;
+}
+#navbarCollapse {
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 1;
+     width: 280px; /*example + never use min-width with this solution */
+     height: 100%;
+     background: #000;
+   }
+   .sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #111;
+     overflow-x: hidden;
+     transition: 1s;
+     padding-top: 30px;
+   }
+   .navBack {
+     right: 0;
+     color: black;
+     background-color: #f1f1f1;
+   }
+   .sidenav div a,h4 {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 15px;
+     color: #818181;
+     display: block;
+     transition: 0.3s;
+   }
+   .sidenav div a:hover {
+     color: #f1f1f1;
+   }
+
+   @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.navSlide , .navBack {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+}
+.navSlide {
+  left: 0;
+color: white;
+background-color: #d9d9d9;
+}
+body-container : {
+  padding-left: 10px;
+  width: 100%
+}
+
+.table table-condensed :{
+  width: 100%
+}
+.nav {
+height: 52px
+}
