@@ -11,18 +11,10 @@ export default class SlideNavigator extends React.Component{
   closeNav = () => {
   document.getElementById("mySidenav").style.width = "0";
 }
-onGroup = (group)=>{
-  this.setState({ selGroup : group});
-  $(".myTable tr").filter(function() {
-    if(group !== "All"){
-    $(this).toggle($(this).children(':eq(6)').text().toLowerCase().indexOf(group) > -1)
-    }
-  });
-}
   render() {
     return (
-      <div id="mySidenav" class="sidenav">
-      <div className="header-container">
+      <div id="mySidenav" className="sidenav" >
+      <div>
         <h4>Gangs</h4>
         <a onClick={() => {this.props.onGroupSel('All')}} href="#">All</a>
         <a onClick={() => {this.props.onGroupSel('G002')}} href="#">G002</a>
@@ -31,7 +23,7 @@ onGroup = (group)=>{
         <a onClick={() => {this.props.onGroupSel('G023')}} href="#">G023</a>
         <a onClick={() => {this.props.onGroupSel('G025')}} href="#">G025</a>
         </div>
-        <a className="navBack" onClick={()=> {this.closeNav()}} id="navBtBack">&#10094;</a>
+        <a className="navBack" style={{color:'white'}} onClick={()=> {this.closeNav()}} id="navBtBack">&#10094;</a>
       </div >
     );
   }

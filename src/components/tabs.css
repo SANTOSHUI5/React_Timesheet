@@ -1,21 +1,20 @@
 .nav {
   padding: 10px 5px 0;
-  background: #333;
+  background: #0c5460;
+  width: 100%;
+}
+.nav-tabs .nav-link {
+    color: white;
 }
 .addBt {
-  float: right;
-  padding-right: 1.5em ;
-  color: white;
-  position: absolute;
-  right: 0;
-
+  padding: 5px;
 }
 .tabStyle{
     align-items: center;
-    padding: 1em 1em;
 }
 .content-style{
     display: flex;
+    padding: 1em;
 }
 #navbarCollapse {
      position: fixed;
@@ -35,16 +34,14 @@
      left: 0;
      background-color: #111;
      overflow-x: hidden;
-     transition: 1s;
+     transition: 0.5s;
      padding-top: 30px;
    }
    .navBack {
      right: 0;
-     color: black;
-     background-color: #f1f1f1;
    }
    .sidenav div a,h4 {
-     padding: 8px 8px 8px 32px;
+     padding: 0.5em;
      text-decoration: none;
      font-size: 15px;
      color: #818181;
@@ -60,7 +57,7 @@
   .sidenav a {font-size: 18px;}
 }
 .navSlide , .navBack {
-  cursor: pointer;
+  cursor: pointer !important;
   position: absolute;
   top: 50%;
   width: auto;
@@ -71,17 +68,16 @@
 }
 .navSlide {
   left: 0;
-color: white;
-background-color: #d9d9d9;
+color: black;
 }
 body-container : {
   padding-left: 10px;
   width: 100%
 }
 
-.table table-condensed :{
-  width: 100%
+a{
+  color: #f8f9fa;
 }
-.nav {
-height: 52px
+.fa{
+  color:white;
 }

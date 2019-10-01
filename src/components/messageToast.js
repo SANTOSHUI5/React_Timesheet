@@ -6,15 +6,15 @@ super(props);
   }
 render(){
   return(
-    <div class="toast" id="myToast">
-    <div class="toast-header">
-          <strong class="mr-auto">
+    <div className="toast" id="myToast">
+    <div className="toast-header">
+          <strong className="mr-auto">
           <i className={this.props.type === "Warning" ? "fa fa-exclamation-triangle" : "fa fa-thumbs-up"}
           style={{color: this.props.type === "Warning" ?'#e5e83c' : '#73e83c',padding:'10px'}}></i>
           {this.props.title}
           </strong>
     </div>
-    <div class="toast-body">
+    <div className="toast-body">
           {this.props.text}
     </div>
     </div>
